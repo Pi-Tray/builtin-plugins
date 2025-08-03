@@ -35,15 +35,15 @@ module.exports = {
 
         // optionally specify app object with name and optional arguments
         if (config.app) {
-            if (!config.name) {
+            if (!config.app.name) {
                 throw new Error("Must provide app.name if providing app object");
             }
 
-            if (typeof config.name !== "string") {
+            if (typeof config.app.name !== "string") {
                 throw new Error("app.name must be a string");
             }
 
-            if (config.arguments && !Array.isArray(config.arguments)) {
+            if (config.app.arguments && !Array.isArray(config.app.arguments)) {
                 throw new Error("app.arguments must be an array of strings if provided");
             }
 
