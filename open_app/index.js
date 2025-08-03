@@ -31,6 +31,8 @@ module.exports = {
             throw new Error("arguments must be an array of strings if provided");
         }
 
+        console.log(`Opening app: ${config.name} with arguments: ${config.arguments || []}`);
+
         // open the path with the specified app
         await openApp(config.name, {
             arguments: config.arguments || []

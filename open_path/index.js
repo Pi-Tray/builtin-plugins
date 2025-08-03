@@ -47,9 +47,13 @@ module.exports = {
                 throw new Error("app.arguments must be an array of strings if provided");
             }
 
+            console.log(`Opening path: ${config.path} with app: ${config.app.name} and arguments: ${config.app.arguments || []}`);
+
             // open the path with the specified app
             await open(config.path, {app: config.app});
         } else {
+            console.log(`Opening path: ${config.path} with default application`);
+
             // open the path with the default app
             await open(config.path);
         }
