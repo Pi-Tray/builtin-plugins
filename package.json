@@ -1,0 +1,15 @@
+{
+  "name": "@pi-tray/builtin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "obfuscatedgenerated",
+  "license": "MIT",
+  "dependencies": {
+    "open": "^10.2.0"
+  }
+}

@@ -1,0 +1,57 @@
+const open = require("open");
+
+module.exports = {
+    display_name: "Open a file or URL",
+
+    config_template: {
+        path: {
+            type: "string",
+            description: "The path or URL to open"
+        },
+        app: {
+            type: "object",
+            optional: true,
+            description: "Optional application to open the path with",
+            properties: {
+                name: {
+                    type: "string",
+                    description: "Name of the app to use"
+                },
+                arguments: {
+                    type: "array",
+                    optional: true,
+                    description: "Optional array of string arguments",
+                    items: {type: "string"}
+                }
+            }
+        }
+    },
+
+    handle_push: async ({config}) => {
+        // must specify path
+        if (!config || !config.path) {
+            throw new Error("No path provided in the configuration.");
+        }
+
+        // optionally specify app object with name and optional arguments
+        if (config.app) {
+            if (!config.name) {
+                throw new Error("Must provide app.name if providing app object");
+            }
+
+            if (typeof config.name !== "string") {
+                throw new Error("app.name must be a string");
+            }
+
+            if (config.arguments && !Array.isArray(config.arguments)) {
+                throw new Error("app.arguments must be an array of strings if provided");
+            }
+
+            // open the path with the specified app
+            await open(config.path, {app: config.app});
+        } else {
+            // open the path with the default app
+            await open(config.path);
+        }
+    }
+}
