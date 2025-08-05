@@ -1,6 +1,6 @@
 const {exec} = require("child_process");
 
-module.exports = {
+module.exports.default = {
     display_name: "Run a console command",
 
     config_template: {

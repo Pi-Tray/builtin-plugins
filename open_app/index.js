@@ -1,6 +1,6 @@
 const {openApp} = require("open");
 
-module.exports = {
+module.exports.default = {
     display_name: "Open an application",
 
     config_template: {

@@ -1,6 +1,6 @@
 const open = require("open").default;
 
-module.exports = {
+module.exports.default = {
     display_name: "Open a file or URL",
 
     config_template: {

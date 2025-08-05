@@ -1,7 +1,7 @@
 const { appdata } = require("../util");
 const open = require("open").default;
 
-module.exports = {
+module.exports.default = {
     display_name: "Edit Pi-Tray's grid.json",
 
     config_template: {
