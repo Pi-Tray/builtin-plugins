@@ -1,4 +1,4 @@
-import * as path from "path";
+const path = require("path");
 
 // thanks https://stackoverflow.com/a/26227660/19678893
 const appdata_root = process.env.APPDATA || (process.platform === "darwin" ? process.env.HOME + "/Library/Application Support" : process.env.HOME + "/.config");
