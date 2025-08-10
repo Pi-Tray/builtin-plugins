@@ -13,11 +13,11 @@ It will be installed when you run `npm run plugin:setup` when setting up pi-tray
 ### From server root
 
 ```bash
-npm run plugin:npm install https://github.com/Pi-Tray/voicemeeter-plugins#release
+npm run plugin:npm install https://github.com/Pi-Tray/builtin-plugins
 ```
 
 ### From plugin-env
 
 ```sh
-npm install https://github.com/Pi-Tray/voicemeeter-plugins#release
+npm install https://github.com/Pi-Tray/builtin-plugins
 ```
