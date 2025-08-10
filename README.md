@@ -2,7 +2,7 @@
 
 ## Installation
 
-It will be installed when you do `npm run plugin:setup` on the server, but in case you've uninstalled it:
+It will be installed when you run `npm run plugin:setup` when setting up pi-tray-server, but in case you've uninstalled it:
 
 ### One click
 
