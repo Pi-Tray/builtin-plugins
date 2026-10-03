@@ -26,7 +26,7 @@ module.exports.default = {
     },
 
     live: {
-        controls: ["text"],
+        controls: ["label"],
 
         init({config, update, signal}) {
             const show_seconds = config.show_seconds === true;
