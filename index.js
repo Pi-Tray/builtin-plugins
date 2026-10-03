@@ -3,5 +3,6 @@ module.exports = {
     open_app: require("./open_app").default,
     open_appdata: require("./open_appdata").default,
     open_path: require("./open_path").default,
-    run_command: require("./run_command").default
+    run_command: require("./run_command").default,
+    clock: require("./clock").default
 }
