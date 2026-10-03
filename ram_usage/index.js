@@ -18,7 +18,7 @@ module.exports.default = {
     },
 
     live: {
-        controls: ["text"],
+        controls: ["label"],
 
         init({config, update, signal}) {
             const interval_ms = Math.max(500, (config.interval_seconds ?? 2) * 1000);
