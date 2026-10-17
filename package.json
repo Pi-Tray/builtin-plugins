@@ -13,7 +13,7 @@
     "open": "^10.2.0"
   },
   "devDependencies": {
-    "@pi-tray/plugin-build": "https://github.com/Pi-Tray/Pi-Tray/releases/download/plugin-build-v0.1.0-alpha.1/pi-tray-plugin-build-0.1.0-alpha.1.tgz",
+    "@pi-tray/plugin-build": "https://github.com/Pi-Tray/Pi-Tray/releases/download/plugin-build-v0.1.0-alpha.3/pi-tray-plugin-build-0.1.0-alpha.3.tgz",
     "@pi-tray/types": "https://github.com/Pi-Tray/Pi-Tray/releases/download/types-v0.1.0-alpha/pi-tray-types-0.1.0-alpha.tgz"
   }
 }
